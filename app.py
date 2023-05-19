@@ -79,6 +79,7 @@ import os
 
 os.system(f"git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /home/demo/source/stable-diffusion-webui")
 os.chdir(f"/home/demo/source/stable-diffusion-webui")
+print("git done!")
 os.system(f"wget -q https://huggingface.co/ckpt/anything-v4.5-vae-swapped/resolve/main/anything-v4.5-vae-swapped.safetensors -O /home/demo/source/stable-diffusion-webui/models/Stable-diffusion/anything-v4.5-vae-swapped.safetensors")
-os.system(f"ls")
-os.system(f"python /home/demo/source/test.py")
+print("wget done!")
+os.system(f"python /home/demo/source/stable-diffusion-webui/launch.py")
