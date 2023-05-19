@@ -1,6 +1,0 @@
-aria2
-libcairo2-dev
-pkg-config
-python3-dev
-git
-git-lfs
