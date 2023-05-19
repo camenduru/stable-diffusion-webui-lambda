@@ -7,7 +7,7 @@ from subprocess import getoutput
 # elif("T4" in gpu_info):
 #     os.system(f"pip install -q https://github.com/camenduru/stable-diffusion-webui-colab/releases/download/0.0.15/xformers-0.0.15.dev0+1515f77.d20221130-cp38-cp38-linux_x86_64.whl")
 
-os.system(f"git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /home/demo/source/stable-diffusion-webui")
+os.system(f"sudo git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /home/demo/source/stable-diffusion-webui")
 os.chdir(f"/home/demo/source/stable-diffusion-webui")
 
 # os.system(f"wget -q https://github.com/camenduru/webui/raw/main/env_patch.py -O /home/demo/source/env_patch.py")
@@ -73,4 +73,4 @@ os.chdir(f"/home/demo/source/stable-diffusion-webui")
 
 # os.system(f"python launch.py --force-enable-xformers --ui-config-file /home/demo/source/ui-config.json --ui-settings-file /home/demo/source/config.json --disable-console-progressbars --enable-console-prompts --cors-allow-origins huggingface.co,hf.space --no-progressbar-hiding --api --skip-torch-cuda-test")
 
-os.system(f"python3 launch.py")
+os.system(f"sudo python3 launch.py")
