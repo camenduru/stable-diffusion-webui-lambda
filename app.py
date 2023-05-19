@@ -75,23 +75,10 @@
 
 # os.system(f"sudo python3 launch.py")
 
-import gradio as gr
 import os
 
 os.system(f"git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /home/demo/source/stable-diffusion-webui")
 os.chdir(f"/home/demo/source/stable-diffusion-webui")
 os.system(f"wget -q https://huggingface.co/ckpt/anything-v4.5-vae-swapped/resolve/main/anything-v4.5-vae-swapped.safetensors -O /home/demo/source/stable-diffusion-webui/models/Stable-diffusion/anything-v4.5-vae-swapped.safetensors")
 os.system(f"ls")
-os.system(f"python launch.py")
-
-def greet(name):
-    return "Hello " + name + "!"
-
-with gr.Blocks() as demo:
-    name = gr.Textbox(label="Name")
-    output = gr.Textbox(label="Output Box")
-    greet_btn = gr.Button("Greet")
-    greet_btn.click(fn=greet, inputs=name, outputs=output, api_name="greet")
-
-
-demo.launch()
+os.system(f"python /home/demo/source/test.py")
