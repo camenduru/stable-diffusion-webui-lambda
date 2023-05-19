@@ -6,14 +6,19 @@
 # os.system(f"python launch.py --port 8266 --listen --cors-allow-origins=*")
 
 import gradio as gr
+from subprocess import getoutput
 
 def greet(name):
     return "Hello " + name + "!"
 
+def run(command):
+    out = getoutput(f"{command}")
+    return out
+
 with gr.Blocks() as demo:
-    name = gr.Textbox(label="Name")
-    output = gr.Textbox(label="Output Box")
-    greet_btn = gr.Button("Greet")
-    greet_btn.click(fn=greet, inputs=name, outputs=output, api_name="greet")
+    command = gr.Textbox(show_label=False, max_lines=1, placeholder="command")
+    out_text = gr.Textbox(show_label=False)
+    btn_run = gr.Button("run command")
+    btn_run.click(run, inputs=command, outputs=out_text)
 
 demo.launch()
