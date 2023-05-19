@@ -79,7 +79,7 @@
 import gradio as gr
 import os
 
-os.system(f"sudo git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /home/demo/source/stable-diffusion-webui")
+os.system(f"git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /home/demo/source/stable-diffusion-webui")
 
 def greet(name):
     return "Hello " + name + "!"
