@@ -1,5 +1,5 @@
-import os
-from subprocess import getoutput
+# import os
+# from subprocess import getoutput
 
 # gpu_info = getoutput('nvidia-smi')
 # if("A10G" in gpu_info):
@@ -7,8 +7,8 @@ from subprocess import getoutput
 # elif("T4" in gpu_info):
 #     os.system(f"pip install -q https://github.com/camenduru/stable-diffusion-webui-colab/releases/download/0.0.15/xformers-0.0.15.dev0+1515f77.d20221130-cp38-cp38-linux_x86_64.whl")
 
-os.system(f"sudo git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /home/demo/source/stable-diffusion-webui")
-os.chdir(f"/home/demo/source/stable-diffusion-webui")
+# os.system(f"sudo git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /home/demo/source/stable-diffusion-webui")
+# os.chdir(f"/home/demo/source/stable-diffusion-webui")
 
 # os.system(f"wget -q https://github.com/camenduru/webui/raw/main/env_patch.py -O /home/demo/source/env_patch.py")
 # os.system(f"sed -i '$a fastapi==0.90.0' /home/demo/source/stable-diffusion-webui/requirements_versions.txt")
@@ -73,4 +73,19 @@ os.chdir(f"/home/demo/source/stable-diffusion-webui")
 
 # os.system(f"python launch.py --force-enable-xformers --ui-config-file /home/demo/source/ui-config.json --ui-settings-file /home/demo/source/config.json --disable-console-progressbars --enable-console-prompts --cors-allow-origins huggingface.co,hf.space --no-progressbar-hiding --api --skip-torch-cuda-test")
 
-os.system(f"sudo python3 launch.py")
+# os.system(f"sudo python3 launch.py")
+
+
+import gradio as gr
+
+def greet(name):
+    return "Hello " + name + "!"
+
+with gr.Blocks() as demo:
+    name = gr.Textbox(label="Name")
+    output = gr.Textbox(label="Output Box")
+    greet_btn = gr.Button("Greet")
+    greet_btn.click(fn=greet, inputs=name, outputs=output, api_name="greet")
+
+
+demo.launch()
