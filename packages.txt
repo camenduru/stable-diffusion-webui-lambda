@@ -1,1 +1,5 @@
 git-lfs
+aria2
+libcairo2-dev
+pkg-config
+python3-dev
