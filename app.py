@@ -24,7 +24,7 @@ os.system(f"git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-locon /ho
 os.system(f"git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg /home/demo/source/stable-diffusion-webui/extensions/stable-diffusion-webui-rembg")
 os.system(f"git clone https://github.com/ashen-sensored/stable-diffusion-webui-two-shot /home/demo/source/stable-diffusion-webui/extensions/stable-diffusion-webui-two-shot")
 os.system(f"git clone https://github.com/camenduru/sd_webui_stealth_pnginfo /home/demo/source/stable-diffusion-webui/extensions/sd_webui_stealth_pnginfo")
-os.system(f"git clone -b dev https://github.com/camenduru/sd-webui-aspect-ratio-helper /home/demo/source/stable-diffusion-webui/extensions/sd-webui-aspect-ratio-helper")
+# os.system(f"git clone -b dev https://github.com/camenduru/sd-webui-aspect-ratio-helper /home/demo/source/stable-diffusion-webui/extensions/sd-webui-aspect-ratio-helper")
 
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11e_sd15_ip2p_fp16.safetensors -d /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11e_sd15_ip2p_fp16.safetensors")
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11e_sd15_shuffle_fp16.safetensors -d /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11e_sd15_shuffle_fp16.safetensors")
