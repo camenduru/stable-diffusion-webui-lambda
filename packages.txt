@@ -1,3 +1,2 @@
 aria2
-libcairo2
 git-lfs
