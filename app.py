@@ -20,7 +20,7 @@ os.system(f"git clone https://github.com/hnmr293/posex /home/demo/source/stable-
 os.system(f"git clone https://github.com/camenduru/sd-webui-tunnels /home/demo/source/stable-diffusion-webui/extensions/sd-webui-tunnels")
 os.system(f"git clone https://github.com/etherealxx/batchlinks-webui /home/demo/source/stable-diffusion-webui/extensions/batchlinks-webui")
 os.system(f"git clone https://github.com/catppuccin/stable-diffusion-webui /home/demo/source/stable-diffusion-webui/extensions/stable-diffusion-webui-catppuccin")
-os.system(f"git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-locon /home/demo/source/stable-diffusion-webui/extensions/a1111-sd-webui-locon")
+os.system(f"git clone https://github.com/camenduru/a1111-sd-webui-locon /home/demo/source/stable-diffusion-webui/extensions/a1111-sd-webui-locon")
 os.system(f"git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg /home/demo/source/stable-diffusion-webui/extensions/stable-diffusion-webui-rembg")
 os.system(f"git clone https://github.com/ashen-sensored/stable-diffusion-webui-two-shot /home/demo/source/stable-diffusion-webui/extensions/stable-diffusion-webui-two-shot")
 os.system(f"git clone https://github.com/camenduru/sd_webui_stealth_pnginfo /home/demo/source/stable-diffusion-webui/extensions/sd_webui_stealth_pnginfo")
