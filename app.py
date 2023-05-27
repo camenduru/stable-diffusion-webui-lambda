@@ -23,7 +23,7 @@ os.system(f"git clone https://github.com/catppuccin/stable-diffusion-webui /home
 os.system(f"git clone https://github.com/camenduru/a1111-sd-webui-locon /home/demo/source/stable-diffusion-webui/extensions/a1111-sd-webui-locon")
 os.system(f"git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg /home/demo/source/stable-diffusion-webui/extensions/stable-diffusion-webui-rembg")
 os.system(f"git clone https://github.com/ashen-sensored/stable-diffusion-webui-two-shot /home/demo/source/stable-diffusion-webui/extensions/stable-diffusion-webui-two-shot")
-os.system(f"git clone https://github.com/camenduru/sd_webui_stealth_pnginfo /home/demo/source/stable-diffusion-webui/extensions/sd_webui_stealth_pnginfo")
+# os.system(f"git clone https://github.com/camenduru/sd_webui_stealth_pnginfo /home/demo/source/stable-diffusion-webui/extensions/sd_webui_stealth_pnginfo")
 # os.system(f"git clone -b dev https://github.com/camenduru/sd-webui-aspect-ratio-helper /home/demo/source/stable-diffusion-webui/extensions/sd-webui-aspect-ratio-helper")
 os.system(f"git clone -b dev https://github.com/camenduru/SadTalker /home/demo/source/stable-diffusion-webui/extensions/SadTalker")
 os.system(f"git -C /home/demo/source/stable-diffusion-webui/extensions/SadTalker/checkpoints clone https://huggingface.co/camenduru/SadTalker")
